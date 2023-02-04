@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <!--Ссылка на бутсрап стили-->
+    <style>
+      .rounded-img {
+        width: 60%; /*ширина фото*/
+        border-radius: 50%; /*степень закругления*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /*тень*/
+        padding: 0.6em; /*внутренний отступ фото*/
+        margin-bottom: 1em; /*отступ снизу*/
+      }
+    </style>
+    <!--rounded-img - название класса(стиля)-->
+    <!--css стиль для фото-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img src="LS.png" alt="Menu logo" height=50" />
+        </a>
+        <!-- p-0 - padding (отступ) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="places.html">Favourite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    `
+    <div class="container text-center my-5">
+      <!--my-5 - margin по оси y (отступ сверху)-->
+      <div class="row">
+        <!--просто класс-->
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <!--lg - large, md - medium, 6/12, 8/12 (как будет отобраться на экране)-->
+          <img class="rounded-img" src="img.png" width="500px" alt="Person" />
+          <h1 class="fw-light">I am</h1>
+          <!--fw-ligh - font wave (шрифт)-->
+          <p class="lead text-muted">
+            <!--lead - текст больше, text-muted - серый текст-->
+            I decided to create this page. Ah, shit, I really don't know what to
+            write right here.
+          </p>
+          <a
+            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <!--target_blank - открытие ссылки в нов вкл, class btn - кнопка, btn-primary - главная кнопка-->
+            Bootstrap
+          </a>
+          <a
+            href="https://bootstrapshuffle.com/classes"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            <!--btn-secondary - второстепенная кнопка-->
+            Bootstrap CSS classes
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
